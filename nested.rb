@@ -57,7 +57,7 @@ def dennis_ritchies_language
         }
      }
 		 language = programmer_hash[:dennis_ritchie][:languages]
-		 new_value = language.to_s
+		 new_value = language.gsub(/["C]/)
 end
 
 def adding_matz
